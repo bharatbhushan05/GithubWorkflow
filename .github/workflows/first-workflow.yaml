@@ -8,4 +8,4 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Welcome message
-              run: echo "This is my first workflow that gets triggered with push to repo."
+              run: echo "This is my first workflow that gets triggered with push code to repo."
