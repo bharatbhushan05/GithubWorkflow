@@ -1,1 +1,11 @@
 ## This is my first github action workflow.
+name: First github action workflow
+
+on: push
+
+jobs:
+    first_job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Welcome message
+              run: echo "This is my first workflow that gets triggered with push to repo."
