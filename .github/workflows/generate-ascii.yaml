@@ -20,6 +20,6 @@ jobs:
                 pwd
             - name: copying owl-bird.cow file
               run: |
-                sudo cp ./GithubWorkflow/test/owl_bird.cow  /usr/share/cowsay/cows/
+                sudo cp ./test/owl_bird.cow  /usr/share/cowsay/cows/
                 cowsay -f owl-bird.cow "Hello Owl Bird"
             
