@@ -18,6 +18,6 @@ jobs:
                 cowsay -f pony.cow "This is my first cowsay workflow"
             - name: copying owl-bird.cow file
               run: |
-                sudo cp /home/runner/work/GithubWorkflow/GithubWorkflow/test/owl_bird.cow  /usr/share/cowsay/cows/
+                sudo cp ./GithubWorkflow/test/owl_bird.cow  /usr/share/cowsay/cows/
                 cowsay -f owl-bird.cow "Hello Owl Bird"
             
