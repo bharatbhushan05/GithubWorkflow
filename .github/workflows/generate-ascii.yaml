@@ -8,6 +8,7 @@ jobs:
         steps:
             - name: Checkout Repo
               uses: actions/checkout@v5
+
             - name: Installing cowsay program
               run: sudo apt-get install cowsay -y
 
@@ -16,6 +17,7 @@ jobs:
                 cowsay Hello
                 cowsay -l
                 cowsay -f pony.cow "This is my first cowsay workflow"
+                pwd
             - name: copying owl-bird.cow file
               run: |
                 sudo cp ./GithubWorkflow/test/owl_bird.cow  /usr/share/cowsay/cows/
