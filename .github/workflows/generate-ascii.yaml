@@ -17,7 +17,7 @@ jobs:
                 cowsay Hello
                 cowsay -l
                 cowsay -f pony.cow "This is my first cowsay workflow"
-                pwd
+                pwd ; ls ./test
             - name: copying owl-bird.cow file
               run: |
                 sudo cp ./test/owl_bird.cow  /usr/share/cowsay/cows/
