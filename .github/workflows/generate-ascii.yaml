@@ -16,8 +16,4 @@ jobs:
                 cowsay Hello
                 cowsay -l
                 cowsay -f pony.cow "This is my first cowsay workflow"
-            - name: installing xcowsay
-              run: sudo apt install xcowsay
-            - name: running xcowsay  
-              run: xcowsay Hello
-
+            
