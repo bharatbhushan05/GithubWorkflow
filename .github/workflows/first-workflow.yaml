@@ -13,3 +13,4 @@ jobs:
             - name: checking for minikube version
               run: minikube version
             - uses: actions/checkout@v5
+            - run: pwd
