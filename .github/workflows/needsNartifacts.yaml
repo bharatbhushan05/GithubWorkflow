@@ -1,13 +1,13 @@
 # In this worflow we are using needs to force the jobs run in a sequence and upload/download artifacts to make the file available to next job.
 
-name: Needs in Github
+name: Needs and Artifacts in Github
 on: push
 jobs:
     first-job:
         runs-on: ubuntu-latest
         steps:
             - name: checking-out the respo
-              run: actions/checkout@v5
+              uses: actions/checkout@v5
             - name: Installing cowsay
               run: sudo apt-get install cowsay -y
             - name: Executing cowsay commands
@@ -24,7 +24,7 @@ jobs:
         steps:
            - name: sleep for 5 sec
              run: sleep 5
-           - name: Downloading dragon file    ## downloading the artifcat 
+           - name: Downloading dragon file    ## downloading the artifacts 
              uses: actions/download-artifact@v5
              with:
               name: dragon.txt-file
