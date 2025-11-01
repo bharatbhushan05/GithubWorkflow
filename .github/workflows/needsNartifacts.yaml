@@ -17,6 +17,13 @@ jobs:
               with:
                 name: dragon.txt-file
                 path: dragon.txt
+                if-no-files-found: error
+                retention-days: 1
+            - name: Display all outputs from upload-artifcats
+              run: |
+                echo "Artifact ID: ${{ steps.upload.outputs.artifact-id }}"
+                echo "Artifact URL: ${{ steps.upload.outputs.artifact-url }}"
+                echo "Download URL: ${{ steps.upload.outputs.download-url }}"             
             
     second-job:
         runs-on: ubuntu-latest
