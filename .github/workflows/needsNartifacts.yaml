@@ -7,7 +7,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: checking-out the respo
-              run: actions/checkout@5
+              run: actions/checkout@v5
             - name: Installing cowsay
               run: sudo apt-get install cowsay -y
             - name: Executing cowsay commands
