@@ -13,6 +13,7 @@ jobs:
             - name: Executing cowsay commands
               run: cowsay -f dragon "Run for the cover, I am a Dragon.... RWAR" >> dragon.txt
             - name: uploading dragon file
+              id: upload
               uses: actions/upload-artifact@v4   ## uploading artifacts
               with:
                 name: dragon.txt-file
